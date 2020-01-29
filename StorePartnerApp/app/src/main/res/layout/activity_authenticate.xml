@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/home_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authenticate">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/red_button"
+        android:text="Welcome , Login Success "></TextView>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/red_button"
+        android:text="Enter the IMEI id to check Warrenty"
+        android:fontFamily="sans-serif-black"></TextView>
+    <EditText
+        android:id="@+id/IMEI"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"></EditText>
+
+    <Button
+        android:textColor="@color/white"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:background="@drawable/box_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="onSubmitIMEI"
+        ></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="OR"
+        android:textSize="20sp"
+
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center"></TextView>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_button"
+        android:fontFamily="sans-serif-black"
+        android:text="Scan QR code to authenticate :"></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:text="Scan"
+        android:onClick="onQRCODE"
+        android:textColor="@color/white"
+        android:background="@drawable/box_button"></Button>
+
+</LinearLayout>
